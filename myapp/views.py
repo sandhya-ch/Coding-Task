@@ -3,12 +3,14 @@ from myapp.serializers import PersonSerializers
 from rest_framework import viewsets
 from myapp.models import Person
 import pandas as pd
-from myapp.models import Person
+from rest_framework.response import Response
+from rest_framework import permissions
 
 # Create your views here.
 class Personviewset(viewsets.ModelViewSet):
     serializer_class=PersonSerializers
     queryset=Person.objects.all()
+    permission_classes = [permissions.AllowAny]
 
     def create(self, request):
         data = request.data
@@ -18,7 +20,6 @@ class Personviewset(viewsets.ModelViewSet):
         file=request.FILES.get('file',None)
         if file:
             csv_data=pd.read_csv(file)
-            print(csv_data)
             personObjs = [
                 Person(
                     name = row['Name'],
