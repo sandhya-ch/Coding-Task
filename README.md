@@ -28,9 +28,10 @@ Django Application to upload CSV file and read the content and store the data in
   ```
     http://127.0.0.1:8000/
   ```
-7. **For Sample CSV please check git repo filename is test_upload.csv**
+7.**For Sample CSV please check git repo filename is test_upload.csv**
 
-8. **For postgresql Database setup**
+8.**For postgresql Database setup**
   ```
     https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
   ```
+9.**Create a Database name "Test" and modify DB password in seetings file according to your Database password**
