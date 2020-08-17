@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Coding Challenge
 Django Application to upload CSV file and read the content and store the data in DB
 
@@ -9,7 +7,7 @@ Django Application to upload CSV file and read the content and store the data in
   ```
     git clone https://github.com/sandhya-ch/Coding-Task.git 
   ```
-2.**Install Python version 3.6 or greater**
+2.**Install Python version 3.8 or greater**
   ```
     https://www.python.org/downloads/
   ```
@@ -22,4 +20,11 @@ Django Application to upload CSV file and read the content and store the data in
    ```
       pip install -r requirements.txt
   ```
->>>>>>> 995842abc42cc9899fbff0b52c8e952d7827525e
+5.**To run server**
+  ```
+    python manage.py runser
+  ```
+6.**after that open Browser and call the following url**
+  ```
+    http://127.0.0.1:8000/
+  ```
